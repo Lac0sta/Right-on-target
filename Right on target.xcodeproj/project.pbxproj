@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F75209D02C77C303009A3EA9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209CF2C77C303009A3EA9 /* Game.swift */; };
 		F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0832C14C9CF00F6183C /* AppDelegate.swift */; };
 		F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */; };
 		F78CF0882C14C9CF00F6183C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0872C14C9CF00F6183C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F75209CF2C77C303009A3EA9 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F78CF0802C14C9CF00F6183C /* Right on target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right on target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78CF0832C14C9CF00F6183C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F75209CE2C77C2C5009A3EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F75209CF2C77C303009A3EA9 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F78CF0772C14C9CF00F6183C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		F78CF0822C14C9CF00F6183C /* Right on target */ = {
 			isa = PBXGroup;
 			children = (
+				F75209CE2C77C2C5009A3EA9 /* Model */,
 				F78CF0832C14C9CF00F6183C /* AppDelegate.swift */,
 				F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */,
 				F78CF0872C14C9CF00F6183C /* ViewController.swift */,
@@ -141,6 +152,7 @@
 				F78CF0882C14C9CF00F6183C /* ViewController.swift in Sources */,
 				F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */,
 				F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */,
+				F75209D02C77C303009A3EA9 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,16 +311,19 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftappsme.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,16 +341,19 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftappsme.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
