@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F75209D02C77C303009A3EA9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209CF2C77C303009A3EA9 /* Game.swift */; };
+		F75209D22C77E881009A3EA9 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209D12C77E881009A3EA9 /* GameRound.swift */; };
+		F75209D42C77E895009A3EA9 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209D32C77E895009A3EA9 /* Generator.swift */; };
 		F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0832C14C9CF00F6183C /* AppDelegate.swift */; };
 		F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */; };
 		F78CF0882C14C9CF00F6183C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0872C14C9CF00F6183C /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		F75209CF2C77C303009A3EA9 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F75209D12C77E881009A3EA9 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		F75209D32C77E895009A3EA9 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		F78CF0802C14C9CF00F6183C /* Right on target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right on target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78CF0832C14C9CF00F6183C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 			isa = PBXGroup;
 			children = (
 				F75209CF2C77C303009A3EA9 /* Game.swift */,
+				F75209D12C77E881009A3EA9 /* GameRound.swift */,
+				F75209D32C77E895009A3EA9 /* Generator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				F78CF0882C14C9CF00F6183C /* ViewController.swift in Sources */,
 				F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */,
 				F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */,
+				F75209D42C77E895009A3EA9 /* Generator.swift in Sources */,
+				F75209D22C77E881009A3EA9 /* GameRound.swift in Sources */,
 				F75209D02C77C303009A3EA9 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftappsme.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -346,7 +354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftappsme.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
