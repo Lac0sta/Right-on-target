@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NumberQuizViewController.swift
 //  Right on target
 //
 //  Created by Aleksei Frolov on 08.06.2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NumberQuizViewController: UIViewController {
     
     var game: Game!
     
@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         let generator = Generator(startValue: 1, endValue: 50)!
         game = Game(valueGenerator: generator, rounds: 5)
         updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
+    }
+    
+    @IBAction func hideCurrentScene() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Interaction between View and Model
