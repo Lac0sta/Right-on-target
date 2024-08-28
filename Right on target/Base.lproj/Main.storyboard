@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LV8-xG-qgC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -84,7 +84,7 @@
         <!--InitialViewController-->
         <scene sceneID="Hld-Nn-yKf">
             <objects>
-                <viewController id="LV8-xG-qgC" userLabel="InitialViewController" customClass="InitialViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="LV8-xG-qgC" userLabel="InitialViewController" customClass="InitialViewController" customModule="Right_on_target" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4y-PQ-oFo">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="q4I-hS-egi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YMs-lb-nPQ" firstAttribute="leading" secondItem="q4I-hS-egi" secondAttribute="leading" constant="192" id="6NN-AU-DFX"/>
                             <constraint firstItem="YMs-lb-nPQ" firstAttribute="centerX" secondItem="q4I-hS-egi" secondAttribute="centerX" id="CmI-Nj-6hQ"/>
                             <constraint firstItem="YMs-lb-nPQ" firstAttribute="top" secondItem="hPR-dc-hyv" secondAttribute="bottom" constant="20" id="IW5-Wo-6dm"/>
                             <constraint firstItem="hPR-dc-hyv" firstAttribute="leading" secondItem="q4I-hS-egi" secondAttribute="leading" constant="192" id="ZX8-He-eS9"/>

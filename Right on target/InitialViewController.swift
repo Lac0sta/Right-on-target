@@ -20,5 +20,4 @@ class InitialViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: "ColorQuizViewController")
         self.present(viewController, animated: true, completion: nil)
     }
-    
 }
