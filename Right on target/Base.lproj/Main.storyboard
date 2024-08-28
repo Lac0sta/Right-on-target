@@ -182,6 +182,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkColor:" destination="DS0-yB-GZZ" eventType="touchUpInside" id="xto-Ww-xgV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWq-Wv-azR" userLabel="ButtonTwo">
                                         <rect key="frame" x="92" y="0.0" width="82" height="30"/>
@@ -197,6 +200,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkColor:" destination="DS0-yB-GZZ" eventType="touchUpInside" id="vB2-ax-eRI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygm-bw-Y7c" userLabel="ButtonThree">
                                         <rect key="frame" x="184" y="0.0" width="82" height="30"/>
@@ -212,6 +218,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkColor:" destination="DS0-yB-GZZ" eventType="touchUpInside" id="dyJ-wV-ywx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-US-gTD" userLabel="ButtonFour">
                                         <rect key="frame" x="276" y="0.0" width="82" height="30"/>
@@ -227,6 +236,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkColor:" destination="DS0-yB-GZZ" eventType="touchUpInside" id="exU-Mu-pVR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USV-8l-rMR" userLabel="ButtonFive">
                                         <rect key="frame" x="368" y="0.0" width="82" height="30"/>
@@ -242,6 +254,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkColor:" destination="DS0-yB-GZZ" eventType="touchUpInside" id="ZUV-rX-NWX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -273,6 +288,15 @@
                             <constraint firstItem="teN-lD-sAH" firstAttribute="top" secondItem="Kbk-A4-aTg" secondAttribute="bottom" constant="90" id="xBE-jH-f1U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonFive" destination="USV-8l-rMR" id="5AP-fa-wvt"/>
+                        <outlet property="buttonFour" destination="d1o-US-gTD" id="Z2p-fY-VFe"/>
+                        <outlet property="buttonOne" destination="3fa-Kp-Phy" id="Xde-2x-4QH"/>
+                        <outlet property="buttonThree" destination="Ygm-bw-Y7c" id="Ok9-Jq-moZ"/>
+                        <outlet property="buttonTwo" destination="WWq-Wv-azR" id="OhG-Lr-9fw"/>
+                        <outlet property="questionLabel" destination="Kbk-A4-aTg" id="X88-U2-Lhe"/>
+                        <outlet property="scoreLabel" destination="wNR-uy-0VG" id="jzC-h1-dMV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baY-Rz-vhA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
