@@ -33,12 +33,11 @@ class NumberQuizViewController: UIViewController {
     @IBAction func checkNumber() {
         game.currentRound.calculateScore(with: Int(slider.value))
         if game.isGameEnded {
-            showAlertWith(score: game.score)
-            game.restartGame()
+           showGameOverAlert()
         } else {
             game.startNewRound()
+            updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
         }
-        updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
     }
     
     // MARK: - Updating View
@@ -47,13 +46,10 @@ class NumberQuizViewController: UIViewController {
         label.text = newText
     }
     
-    private func showAlertWith(score: Int) {
-        let alert = UIAlertController(
-            title: "Game over",
-            message: "You scored \(score) points",
-            preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Start again", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+    private func showGameOverAlert() {
+        AlertPresenter.shared.showAlert(on: self, title: "Game over", message: "You scored \(game.score) points") {
+            self.game.restartGame()
+            self.updateLabelWithSecretNumber(newText: String(self.game.currentRound.currentSecretValue))
+        }
     }
 }
-

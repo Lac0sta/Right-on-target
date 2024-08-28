@@ -12,6 +12,8 @@ class ColorQuizViewController: UIViewController {
     var score: Int = 0
     var correctAnswerIndex = 0
     var buttons = [UIButton]()
+    var rounds = 0
+    var maxRounds = 5
     
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
@@ -34,8 +36,14 @@ class ColorQuizViewController: UIViewController {
         if sender.tag == correctAnswerIndex {
             score += 1
         }
+        rounds += 1
+        
+        if rounds == maxRounds {
+            showGameOverAlert()
+        } else {
+            startNewRound()
+        }
         scoreLabel.text = "\(score)"
-        startNewRound()
     }
     
     @IBAction func hideCurrentScene() {
@@ -77,5 +85,18 @@ class ColorQuizViewController: UIViewController {
         let b = Int(blue * 255)
         
         return String(format: "#%02X%02X%02X", r, g, b)
+    }
+    
+    private func showGameOverAlert() {
+        AlertPresenter.shared.showAlert(on: self, title: "Game over", message: "You scored \(score) points") {
+            self.restartGame()
+            self.startNewRound()
+            self.scoreLabel.text = "\(self.score)"
+        }
+    }
+    
+    private func restartGame() {
+        rounds = 0
+        score = 0
     }
 }

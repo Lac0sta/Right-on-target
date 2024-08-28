@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7267BD72C7FAD08004547E8 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7267BD62C7FAD08004547E8 /* AlertPresenter.swift */; };
 		F72DC3482C7BC38200423591 /* ColorQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DC3472C7BC38200423591 /* ColorQuizViewController.swift */; };
 		F72DC34A2C7BC3AA00423591 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DC3492C7BC3AA00423591 /* InitialViewController.swift */; };
 		F75209D02C77C303009A3EA9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209CF2C77C303009A3EA9 /* Game.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7267BD62C7FAD08004547E8 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		F72DC3472C7BC38200423591 /* ColorQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorQuizViewController.swift; sourceTree = "<group>"; };
 		F72DC3492C7BC3AA00423591 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F75209CF2C77C303009A3EA9 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				F72DC3492C7BC3AA00423591 /* InitialViewController.swift */,
 				F78CF0872C14C9CF00F6183C /* NumberQuizViewController.swift */,
 				F72DC3472C7BC38200423591 /* ColorQuizViewController.swift */,
+				F7267BD62C7FAD08004547E8 /* AlertPresenter.swift */,
 				F78CF0892C14C9CF00F6183C /* Main.storyboard */,
 				F78CF08C2C14C9D900F6183C /* Assets.xcassets */,
 				F78CF08E2C14C9D900F6183C /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 				F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */,
 				F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */,
 				F75209D42C77E895009A3EA9 /* Generator.swift in Sources */,
+				F7267BD72C7FAD08004547E8 /* AlertPresenter.swift in Sources */,
 				F72DC3482C7BC38200423591 /* ColorQuizViewController.swift in Sources */,
 				F75209D22C77E881009A3EA9 /* GameRound.swift in Sources */,
 				F75209D02C77C303009A3EA9 /* Game.swift in Sources */,
