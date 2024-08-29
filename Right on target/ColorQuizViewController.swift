@@ -15,6 +15,9 @@ class ColorQuizViewController: UIViewController {
     var rounds = 0
     var maxRounds = 5
     
+    var generator: GeneratorProtocol = Generator()
+    var colorConverter: ColorConverterProtocol = ColorConverter()
+    
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     
@@ -51,40 +54,17 @@ class ColorQuizViewController: UIViewController {
     }
     
     private func startNewRound() {
-        let randomColors = (0..<5).map { _ in generateRandomColor() }
+        let randomColors = (0..<5).map { _ in generator.getRandomColor() }
         correctAnswerIndex = Int.random(in: 0..<5)
         
         let correctColor = randomColors[correctAnswerIndex]
-        let correctHex = hexString(from: correctColor)
+        let correctHex = colorConverter.convertHexString(from: correctColor)
         
         questionLabel.text = "Guess the color with HEX: \(correctHex)"
         
         for (index, button) in buttons.enumerated() {
             button.backgroundColor = randomColors[index]
         }
-    }
-    
-    private func generateRandomColor() -> UIColor {
-        return UIColor(
-            red: CGFloat.random(in: 0...1),
-            green: CGFloat.random(in: 0...1),
-            blue: CGFloat.random(in: 0...1),
-            alpha: 1.0)
-    }
-    
-    private func hexString(from color: UIColor) -> String {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        
-        color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        
-        let r = Int(red * 255)
-        let g = Int(green * 255)
-        let b = Int(blue * 255)
-        
-        return String(format: "#%02X%02X%02X", r, g, b)
     }
     
     private func showGameOverAlert() {

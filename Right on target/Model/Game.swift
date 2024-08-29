@@ -42,12 +42,17 @@ class Game: GameProtocol {
     }
     
     func startNewRound() {
-        let newSecretValue = self.getNewSecretValue()
+        guard let newSecretValue = self.getNewSecretValue() else {
+            return
+        }
         currentRound = GameRound(secretValue: newSecretValue)
         rounds.append(currentRound)
     }
     
-    private func getNewSecretValue() -> Int {
-        secretValueGenerator.getRandomValue()
+    private func getNewSecretValue() -> Int? {
+        guard let value = secretValueGenerator.getRandomValue() else {
+            return nil
+        }
+        return value
     }
 }

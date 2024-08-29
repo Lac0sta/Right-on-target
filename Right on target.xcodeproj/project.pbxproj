@@ -19,6 +19,7 @@
 		F78CF08B2C14C9CF00F6183C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78CF0892C14C9CF00F6183C /* Main.storyboard */; };
 		F78CF08D2C14C9D900F6183C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78CF08C2C14C9D900F6183C /* Assets.xcassets */; };
 		F78CF0902C14C9D900F6183C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78CF08E2C14C9D900F6183C /* LaunchScreen.storyboard */; };
+		F79861392C810D9B00C96752 /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79861382C810D9B00C96752 /* ColorConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F78CF08C2C14C9D900F6183C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F78CF08F2C14C9D900F6183C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78CF0912C14C9D900F6183C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79861382C810D9B00C96752 /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				F75209CF2C77C303009A3EA9 /* Game.swift */,
 				F75209D12C77E881009A3EA9 /* GameRound.swift */,
 				F75209D32C77E895009A3EA9 /* Generator.swift */,
+				F79861382C810D9B00C96752 /* ColorConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				F78CF0882C14C9CF00F6183C /* NumberQuizViewController.swift in Sources */,
 				F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */,
+				F79861392C810D9B00C96752 /* ColorConverter.swift in Sources */,
 				F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */,
 				F75209D42C77E895009A3EA9 /* Generator.swift in Sources */,
 				F7267BD72C7FAD08004547E8 /* AlertPresenter.swift in Sources */,
