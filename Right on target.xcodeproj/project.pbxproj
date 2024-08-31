@@ -20,6 +20,7 @@
 		F78CF08D2C14C9D900F6183C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78CF08C2C14C9D900F6183C /* Assets.xcassets */; };
 		F78CF0902C14C9D900F6183C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78CF08E2C14C9D900F6183C /* LaunchScreen.storyboard */; };
 		F79861392C810D9B00C96752 /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79861382C810D9B00C96752 /* ColorConverter.swift */; };
+		F7DE92292C839536004DB6DA /* ColorQuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE92282C839536004DB6DA /* ColorQuizGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F78CF08F2C14C9D900F6183C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78CF0912C14C9D900F6183C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F79861382C810D9B00C96752 /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
+		F7DE92282C839536004DB6DA /* ColorQuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorQuizGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F75209CF2C77C303009A3EA9 /* Game.swift */,
+				F7DE92282C839536004DB6DA /* ColorQuizGame.swift */,
 				F75209D12C77E881009A3EA9 /* GameRound.swift */,
 				F75209D32C77E895009A3EA9 /* Generator.swift */,
 				F79861382C810D9B00C96752 /* ColorConverter.swift */,
@@ -175,6 +178,7 @@
 				F7267BD72C7FAD08004547E8 /* AlertPresenter.swift in Sources */,
 				F72DC3482C7BC38200423591 /* ColorQuizViewController.swift in Sources */,
 				F75209D22C77E881009A3EA9 /* GameRound.swift in Sources */,
+				F7DE92292C839536004DB6DA /* ColorQuizGame.swift in Sources */,
 				F75209D02C77C303009A3EA9 /* Game.swift in Sources */,
 				F72DC34A2C7BC3AA00423591 /* InitialViewController.swift in Sources */,
 			);

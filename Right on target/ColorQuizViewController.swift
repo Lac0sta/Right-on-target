@@ -15,7 +15,7 @@ class ColorQuizViewController: UIViewController {
     var rounds = 0
     var maxRounds = 5
     
-    var generator: GeneratorProtocol = Generator()
+    var generator: GeneratorProtocol! = Generator(startValue: 0, endValue: 4)
     var colorConverter: ColorConverterProtocol = ColorConverter()
     
     @IBOutlet var questionLabel: UILabel!

@@ -50,9 +50,7 @@ class Game: GameProtocol {
     }
     
     private func getNewSecretValue() -> Int? {
-        guard let value = secretValueGenerator.getRandomValue() else {
-            return nil
-        }
+        let value = secretValueGenerator.getRandomValue()
         return value
     }
 }
