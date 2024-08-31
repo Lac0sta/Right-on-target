@@ -9,14 +9,8 @@ import UIKit
 
 class ColorQuizViewController: UIViewController {
     
-    var score: Int = 0
-    var correctAnswerIndex = 0
+    var game: ColorQuizGameProtocol!
     var buttons = [UIButton]()
-    var rounds = 0
-    var maxRounds = 5
-    
-    var generator: GeneratorProtocol! = Generator(startValue: 0, endValue: 4)
-    var colorConverter: ColorConverterProtocol = ColorConverter()
     
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
@@ -32,51 +26,57 @@ class ColorQuizViewController: UIViewController {
         super.viewDidLoad()
         
         buttons += [buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive]
-        startNewRound()
+        
+        let generator = Generator(startValue: 0, endValue: 4)!
+        let converter = ColorConverter()
+        game = ColorQuizGame(generator: generator, converter: converter, rounds: 10)
+        
+        game.startNewRound()
+        updateQuestionLabel()
+        updateButtonsColor()
     }
     
     @IBAction func checkColor(_ sender: UIButton) {
-        if sender.tag == correctAnswerIndex {
-            score += 1
+        let isCorrect = game.checkAnswer(index: sender.tag)
+        if isCorrect {
+            updateScoreLabel()
         }
-        rounds += 1
         
-        if rounds == maxRounds {
+        if game.isGameEnded {
             showGameOverAlert()
         } else {
-            startNewRound()
+            game.startNewRound()
+            updateQuestionLabel()
+            updateButtonsColor()
         }
-        scoreLabel.text = "\(score)"
     }
     
     @IBAction func hideCurrentScene() {
         self.dismiss(animated: true, completion: nil)
     }
     
-    private func startNewRound() {
-        let randomColors = (0..<5).map { _ in generator.getRandomColor() }
-        correctAnswerIndex = Int.random(in: 0..<5)
-        
-        let correctColor = randomColors[correctAnswerIndex]
-        let correctHex = colorConverter.convertHexString(from: correctColor)
-        
-        questionLabel.text = "Guess the color with HEX: \(correctHex)"
-        
-        for (index, button) in buttons.enumerated() {
-            button.backgroundColor = randomColors[index]
+    private func updateButtonsColor() {
+        let colors = game.getColorsForButtons()
+        for(index, button) in buttons.enumerated() {
+            button.backgroundColor = colors[index]
         }
+    }
+    
+    private func updateQuestionLabel() {
+        questionLabel.text = "Guess the color with HEX: \(game.currentHexColor)"
+    }
+    
+    private func updateScoreLabel() {
+        scoreLabel.text = "\(game.score)"
     }
     
     private func showGameOverAlert() {
-        AlertPresenter.shared.showAlert(on: self, title: "Game over", message: "You scored \(score) points") {
-            self.restartGame()
-            self.startNewRound()
-            self.scoreLabel.text = "\(self.score)"
+        AlertPresenter.shared.showAlert(on: self, title: "Game over", message: "You scored \(game.score) points") {
+            self.game.restartGame()
+            self.game.startNewRound()
+            self.updateQuestionLabel()
+            self.updateButtonsColor()
+            self.updateScoreLabel()
         }
-    }
-    
-    private func restartGame() {
-        rounds = 0
-        score = 0
     }
 }
