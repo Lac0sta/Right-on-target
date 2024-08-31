@@ -8,20 +8,14 @@
 import UIKit
 
 protocol ColorQuizGameProtocol {
-    var score: Int { get }
     var currentHexColor: String { get }
-    var isGameEnded: Bool { get }
-    
-    func startNewRound()
-    func restartGame()
+    var currentRound: GameRoundProtocol! { get }
     func checkAnswer(index: Int) -> Bool
     func getColorsForButtons() -> [UIColor]
 }
 
-final class ColorQuizGame: ColorQuizGameProtocol {
-    private(set) var score: Int = 0
-    private var roundsCount: Int
-    private var currentRound: Int = 0
+final class ColorQuizGame: BaseGame, ColorQuizGameProtocol {
+    var currentRound: GameRoundProtocol!
     private var colors: [UIColor] = []
     private var correctAnswerIndex: Int = 0
     private let dataGenerator: GeneratorProtocol
@@ -29,30 +23,22 @@ final class ColorQuizGame: ColorQuizGameProtocol {
     
     var currentHexColor: String { colorConverter.convertHexString(from: colors[correctAnswerIndex]) }
     
-    var isGameEnded: Bool { currentRound >= roundsCount }
-    
     init(generator: GeneratorProtocol, converter: ColorConverterProtocol, rounds: Int) {
         dataGenerator = generator
         colorConverter = converter
-        roundsCount = rounds
+        super.init(rounds: rounds)
         startNewRound()
     }
     
-    func startNewRound() {
+    override func startNewRound() {
         colors = dataGenerator.getUniqueColorsArray()
         correctAnswerIndex = dataGenerator.getRandomValue()
-        currentRound += 1
-    }
-    
-    func restartGame() {
-        score = 0
-        currentRound = 0
-        startNewRound()
+        currentRound = GameRound(secretValue: correctAnswerIndex)
+        rounds.append(currentRound)
     }
     
     func checkAnswer(index: Int) -> Bool {
         if index == correctAnswerIndex {
-            score += 1
             return true
         }
         return false

@@ -10,7 +10,7 @@ import Foundation
 protocol GameRoundProtocol {
     var score: Int { get }
     var currentSecretValue: Int { get }
-    
+    func increaseScore()
     func calculateScore(with: Int)
 }
 
@@ -30,5 +30,9 @@ class GameRound: GameRoundProtocol {
         } else {
             score = 50
         }
+    }
+    
+    func increaseScore() {
+        score += 1
     }
 }

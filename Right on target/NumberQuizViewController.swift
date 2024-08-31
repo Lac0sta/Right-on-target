@@ -9,7 +9,7 @@ import UIKit
 
 class NumberQuizViewController: UIViewController {
     
-    var game: Game!
+    var game: NumberQuizGame!
     
     @IBOutlet var slider: UISlider!
     @IBOutlet var label: UILabel!
@@ -20,7 +20,7 @@ class NumberQuizViewController: UIViewController {
         super.viewDidLoad()
         
         let generator = Generator(startValue: 1, endValue: 50)!
-        game = Game(valueGenerator: generator, rounds: 5)
+        game = NumberQuizGame(valueGenerator: generator, rounds: 5)
         updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
     }
     

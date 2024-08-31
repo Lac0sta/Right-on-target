@@ -9,8 +9,12 @@ import UIKit
 
 class ColorQuizViewController: UIViewController {
     
-    var game: ColorQuizGameProtocol!
+    // MARK: - Properties
+    
+    var game: ColorQuizGame!
     var buttons = [UIButton]()
+    
+    // MARK: - IBOutlets
     
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
@@ -21,6 +25,7 @@ class ColorQuizViewController: UIViewController {
     @IBOutlet var buttonFour: UIButton!
     @IBOutlet var buttonFive: UIButton!
     
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +46,16 @@ class ColorQuizViewController: UIViewController {
         updateButtonsColor()
     }
     
+    @IBAction func hideCurrentScene() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: - Interaction between View and Model
+    
     @IBAction func checkColor(_ sender: UIButton) {
         let isCorrect = game.checkAnswer(index: sender.tag)
         if isCorrect {
+            game.currentRound.increaseScore()
             updateScoreLabel()
         }
         
@@ -56,9 +68,7 @@ class ColorQuizViewController: UIViewController {
         }
     }
     
-    @IBAction func hideCurrentScene() {
-        self.dismiss(animated: true, completion: nil)
-    }
+    // MARK: - Updating View
     
     private func updateButtonsColor() {
         let colors = game.getColorsForButtons()

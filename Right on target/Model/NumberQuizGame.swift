@@ -1,5 +1,5 @@
 //
-//  Game.swift
+//  NumberQuizGame.swift
 //  Right on target
 //
 //  Created by Aleksei Frolov on 22.08.2024.
@@ -7,41 +7,22 @@
 
 import Foundation
 
-protocol GameProtocol {
-    var score: Int { get }
+protocol NumberQuizGameProtocol {
     var secretValueGenerator: GeneratorProtocol { get }
     var currentRound: GameRoundProtocol! { get }
-    var isGameEnded: Bool { get }
-    
-    func restartGame()
-    func startNewRound()
 }
 
-class Game: GameProtocol {
-    var score: Int {
-        rounds.reduce(0) { $0 + $1.score }
-    }
+final class NumberQuizGame: BaseGame, NumberQuizGameProtocol {
     var currentRound: GameRoundProtocol!
-    private var rounds: [GameRoundProtocol] = []
     var secretValueGenerator: GeneratorProtocol
-    private var roundsCount: Int!
-    
-    var isGameEnded: Bool {
-        roundsCount == rounds.count
-    }
     
     init(valueGenerator: GeneratorProtocol, rounds: Int) {
         secretValueGenerator = valueGenerator
-        roundsCount = rounds
+        super.init(rounds: rounds)
         startNewRound()
     }
     
-    func restartGame() {
-        rounds = []
-        startNewRound()
-    }
-    
-    func startNewRound() {
+    override func startNewRound() {
         guard let newSecretValue = self.getNewSecretValue() else {
             return
         }
