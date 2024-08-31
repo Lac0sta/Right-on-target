@@ -17,14 +17,21 @@ protocol BaseGameProtocol {
 }
 
 class BaseGame: BaseGameProtocol {
+    
+    // MARK: - Properties
+    
     var score: Int { rounds.reduce(0) { $0 + $1.score } }
     var isGameEnded: Bool { roundsCount == rounds.count }
     var rounds: [GameRoundProtocol] = []
     private var roundsCount: Int!
     
+    // MARK: - Initialization
+    
     init(rounds: Int) {
         roundsCount = rounds
     }
+    
+    // MARK: - Methods
     
     func restartGame() {
         rounds = []

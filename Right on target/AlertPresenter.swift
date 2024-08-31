@@ -9,9 +9,13 @@ import UIKit
 
 class AlertPresenter {
     
+    // MARK: - Singleton
+    
     static let shared = AlertPresenter()
     
     private init() {}
+    
+    // MARK: - Methods
     
     func showAlert(on viewController: UIViewController, title: String, message: String, buttonTitle: String = "OK", handler: (() -> Void)? = nil) {
         

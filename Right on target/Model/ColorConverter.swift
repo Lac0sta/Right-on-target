@@ -13,6 +13,8 @@ protocol ColorConverterProtocol {
 
 class ColorConverter: ColorConverterProtocol {
     
+    // MARK: - Methods
+    
     func convertHexString(from color: UIColor) -> String {
         var red: CGFloat = 0
         var green: CGFloat = 0

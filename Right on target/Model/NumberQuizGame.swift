@@ -13,14 +13,21 @@ protocol NumberQuizGameProtocol {
 }
 
 final class NumberQuizGame: BaseGame, NumberQuizGameProtocol {
+    
+    // MARK: - Properties
+    
     var currentRound: GameRoundProtocol!
     var secretValueGenerator: GeneratorProtocol
+    
+    // MARK: - Initialization
     
     init(valueGenerator: GeneratorProtocol, rounds: Int) {
         secretValueGenerator = valueGenerator
         super.init(rounds: rounds)
         startNewRound()
     }
+    
+    // MARK: - Methods
     
     override func startNewRound() {
         guard let newSecretValue = self.getNewSecretValue() else {

@@ -33,7 +33,7 @@ class NumberQuizViewController: UIViewController {
     @IBAction func checkNumber() {
         game.currentRound.calculateScore(with: Int(slider.value))
         if game.isGameEnded {
-           showGameOverAlert()
+            showGameOverAlert()
         } else {
             game.startNewRound()
             updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))

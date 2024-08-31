@@ -9,6 +9,8 @@ import UIKit
 
 class InitialViewController: UIViewController {
     
+    // MARK: - IBActions
+    
     @IBAction func showNumberQuizViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "NumberQuizViewController")

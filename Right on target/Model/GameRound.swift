@@ -15,12 +15,19 @@ protocol GameRoundProtocol {
 }
 
 class GameRound: GameRoundProtocol {
+    
+    // MARK: - Properties
+    
     var score: Int = 0
     var currentSecretValue: Int = 0
+    
+    // MARK: - Initialization
     
     init(secretValue: Int) {
         currentSecretValue = secretValue
     }
+    
+    // MARK: - Methods
     
     func calculateScore(with value: Int) {
         if value > currentSecretValue {

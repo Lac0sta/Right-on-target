@@ -14,8 +14,13 @@ protocol GeneratorProtocol {
 }
 
 class Generator: GeneratorProtocol {
+    
+    // MARK: - Properties
+    
     private var minBorderValue: Int
     private var maxBorderValue: Int
+    
+    // MARK: - Initialization
     
     init?(startValue: Int, endValue: Int) {
         guard startValue <= endValue else {
@@ -24,6 +29,8 @@ class Generator: GeneratorProtocol {
         minBorderValue = startValue
         maxBorderValue = endValue
     }
+    
+    // MARK: - Methods
     
     func getRandomValue() -> Int {
         (minBorderValue...maxBorderValue).randomElement()!

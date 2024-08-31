@@ -15,6 +15,9 @@ protocol ColorQuizGameProtocol {
 }
 
 final class ColorQuizGame: BaseGame, ColorQuizGameProtocol {
+    
+    // MARK: - Properties
+    
     var currentRound: GameRoundProtocol!
     private var colors: [UIColor] = []
     private var correctAnswerIndex: Int = 0
@@ -23,12 +26,16 @@ final class ColorQuizGame: BaseGame, ColorQuizGameProtocol {
     
     var currentHexColor: String { colorConverter.convertHexString(from: colors[correctAnswerIndex]) }
     
+    // MARK: - Initialization
+    
     init(generator: GeneratorProtocol, converter: ColorConverterProtocol, rounds: Int) {
         dataGenerator = generator
         colorConverter = converter
         super.init(rounds: rounds)
         startNewRound()
     }
+    
+    // MARK: - Methods
     
     override func startNewRound() {
         colors = dataGenerator.getUniqueColorsArray()
