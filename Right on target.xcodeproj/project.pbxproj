@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7267BD72C7FAD08004547E8 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7267BD62C7FAD08004547E8 /* AlertPresenter.swift */; };
+		F72DC3482C7BC38200423591 /* ColorQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DC3472C7BC38200423591 /* ColorQuizViewController.swift */; };
+		F72DC34A2C7BC3AA00423591 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72DC3492C7BC3AA00423591 /* InitialViewController.swift */; };
+		F75209D02C77C303009A3EA9 /* NumberQuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209CF2C77C303009A3EA9 /* NumberQuizGame.swift */; };
+		F75209D22C77E881009A3EA9 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209D12C77E881009A3EA9 /* GameRound.swift */; };
+		F75209D42C77E895009A3EA9 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75209D32C77E895009A3EA9 /* Generator.swift */; };
 		F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0832C14C9CF00F6183C /* AppDelegate.swift */; };
 		F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */; };
-		F78CF0882C14C9CF00F6183C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0872C14C9CF00F6183C /* ViewController.swift */; };
+		F78CF0882C14C9CF00F6183C /* NumberQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78CF0872C14C9CF00F6183C /* NumberQuizViewController.swift */; };
 		F78CF08B2C14C9CF00F6183C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78CF0892C14C9CF00F6183C /* Main.storyboard */; };
 		F78CF08D2C14C9D900F6183C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78CF08C2C14C9D900F6183C /* Assets.xcassets */; };
 		F78CF0902C14C9D900F6183C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78CF08E2C14C9D900F6183C /* LaunchScreen.storyboard */; };
+		F79861392C810D9B00C96752 /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79861382C810D9B00C96752 /* ColorConverter.swift */; };
+		F7DE92292C839536004DB6DA /* ColorQuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE92282C839536004DB6DA /* ColorQuizGame.swift */; };
+		F7DE922B2C83AF19004DB6DA /* BaseGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE922A2C83AF19004DB6DA /* BaseGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7267BD62C7FAD08004547E8 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		F72DC3472C7BC38200423591 /* ColorQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorQuizViewController.swift; sourceTree = "<group>"; };
+		F72DC3492C7BC3AA00423591 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		F75209CF2C77C303009A3EA9 /* NumberQuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberQuizGame.swift; sourceTree = "<group>"; };
+		F75209D12C77E881009A3EA9 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		F75209D32C77E895009A3EA9 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		F78CF0802C14C9CF00F6183C /* Right on target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right on target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78CF0832C14C9CF00F6183C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F78CF0872C14C9CF00F6183C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F78CF0872C14C9CF00F6183C /* NumberQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberQuizViewController.swift; sourceTree = "<group>"; };
 		F78CF08A2C14C9CF00F6183C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F78CF08C2C14C9D900F6183C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F78CF08F2C14C9D900F6183C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78CF0912C14C9D900F6183C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79861382C810D9B00C96752 /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
+		F7DE92282C839536004DB6DA /* ColorQuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorQuizGame.swift; sourceTree = "<group>"; };
+		F7DE922A2C83AF19004DB6DA /* BaseGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F75209CE2C77C2C5009A3EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE922A2C83AF19004DB6DA /* BaseGame.swift */,
+				F75209CF2C77C303009A3EA9 /* NumberQuizGame.swift */,
+				F7DE92282C839536004DB6DA /* ColorQuizGame.swift */,
+				F75209D12C77E881009A3EA9 /* GameRound.swift */,
+				F75209D32C77E895009A3EA9 /* Generator.swift */,
+				F79861382C810D9B00C96752 /* ColorConverter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F78CF0772C14C9CF00F6183C = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +87,13 @@
 		F78CF0822C14C9CF00F6183C /* Right on target */ = {
 			isa = PBXGroup;
 			children = (
+				F75209CE2C77C2C5009A3EA9 /* Model */,
 				F78CF0832C14C9CF00F6183C /* AppDelegate.swift */,
 				F78CF0852C14C9CF00F6183C /* SceneDelegate.swift */,
-				F78CF0872C14C9CF00F6183C /* ViewController.swift */,
+				F72DC3492C7BC3AA00423591 /* InitialViewController.swift */,
+				F78CF0872C14C9CF00F6183C /* NumberQuizViewController.swift */,
+				F72DC3472C7BC38200423591 /* ColorQuizViewController.swift */,
+				F7267BD62C7FAD08004547E8 /* AlertPresenter.swift */,
 				F78CF0892C14C9CF00F6183C /* Main.storyboard */,
 				F78CF08C2C14C9D900F6183C /* Assets.xcassets */,
 				F78CF08E2C14C9D900F6183C /* LaunchScreen.storyboard */,
@@ -138,9 +173,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F78CF0882C14C9CF00F6183C /* ViewController.swift in Sources */,
+				F78CF0882C14C9CF00F6183C /* NumberQuizViewController.swift in Sources */,
 				F78CF0842C14C9CF00F6183C /* AppDelegate.swift in Sources */,
+				F79861392C810D9B00C96752 /* ColorConverter.swift in Sources */,
 				F78CF0862C14C9CF00F6183C /* SceneDelegate.swift in Sources */,
+				F75209D42C77E895009A3EA9 /* Generator.swift in Sources */,
+				F7267BD72C7FAD08004547E8 /* AlertPresenter.swift in Sources */,
+				F72DC3482C7BC38200423591 /* ColorQuizViewController.swift in Sources */,
+				F7DE922B2C83AF19004DB6DA /* BaseGame.swift in Sources */,
+				F75209D22C77E881009A3EA9 /* GameRound.swift in Sources */,
+				F7DE92292C839536004DB6DA /* ColorQuizGame.swift in Sources */,
+				F75209D02C77C303009A3EA9 /* NumberQuizGame.swift in Sources */,
+				F72DC34A2C7BC3AA00423591 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,18 +341,21 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftappsme.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,18 +371,21 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftappsme.Right-on-target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
