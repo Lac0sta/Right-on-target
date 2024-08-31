@@ -31,7 +31,6 @@ class ColorQuizViewController: UIViewController {
         let converter = ColorConverter()
         game = ColorQuizGame(generator: generator, converter: converter, rounds: 10)
         
-        game.startNewRound()
         updateQuestionLabel()
         updateButtonsColor()
     }
@@ -73,7 +72,6 @@ class ColorQuizViewController: UIViewController {
     private func showGameOverAlert() {
         AlertPresenter.shared.showAlert(on: self, title: "Game over", message: "You scored \(game.score) points") {
             self.game.restartGame()
-            self.game.startNewRound()
             self.updateQuestionLabel()
             self.updateButtonsColor()
             self.updateScoreLabel()
