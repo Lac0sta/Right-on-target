@@ -27,6 +27,12 @@ class ColorQuizViewController: UIViewController {
         
         buttons += [buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive]
         
+        buttonOne.tag = 0
+        buttonTwo.tag = 1
+        buttonThree.tag = 2
+        buttonFour.tag = 3
+        buttonFive.tag = 4
+        
         let generator = Generator(startValue: 0, endValue: 4)!
         let converter = ColorConverter()
         game = ColorQuizGame(generator: generator, converter: converter, rounds: 10)
